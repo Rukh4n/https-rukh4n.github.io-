@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: #ca0303;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: #e497ee;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+nav .logo{
+    letter-spacing: 3px;
+
+}
+nav ul li a{
+    text-decoration: none;
+
+}
+nav ul li a:hover {
+    color: #ebbbf0;
+}
+.menu-tombol{
+    display: none;
+    flex-direction: column;-
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-tombol input{
+    position: absolute;
+    height: 40px;
+    width: 28px;
+    top: -6px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-tombol span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color:  #e497ee;
+    border-radius: 3px;
+    transition: 0.8s;
+}
+.menu-tombol span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-tombol input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-tombol span:nth-child(4){
+    transform-origin: 0 100%;
+}
+.menu-tombol input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-tombol input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        width: 60%;
+        
+    }
+}
+@media screen and (max-width: 576px) {
+    nav ul{
+        display: none;
+    }
+    .menu-tombol{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        justify-content: space-evenly;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        z-index: -1;
+        width: 80%;
+    }
+}

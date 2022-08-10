@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	background-image: url(img/bacground_web.jpg);	
+	background-repeat: repeat;
+	background-size: 100%;
+	backdrop-filter: blur();
+}
+header{
+	display: flex;
+	background-color: #11ff00;
+	box-sizing: border-box;
+}
+header div.logo{
+	padding: 15px;
+	width: 25%;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header div.navigasi{
+	width: 75%;
+	padding: 15px;
+}
+header div.navigasi ul{
+	display: flex;
+	padding: 15px;
+	justify-content: space-evenly;
+}
+header div.navigasi ul li{
+	list-style: none;
+}
+header div.navigasi ul li a{
+	text-decoration: none;
+	color: #ffffff;
+}
+header div.navigasi ul li a:hover{
+	text-decoration: none;
+	color: #d9ff00;
+	background-color:  #168214;
+	padding: 10px 30px;
+}
+section{
+	width: 900px;
+	margin: auto;
+	background-color: #000000;;
+}
+section div.profile{
+	width: 750px;
+	padding: 30px;
+	margin: auto;
+	padding: 30px;
+}
+
+section div.tujuan div.ikon1 {
+	display: flex;
+	flex-direction: column;
+	margin: 25px;
+	padding: 30px;
+}
+section div.tujuan{
+	flex-direction: row;
+}
+section div.tujuan div.ikon1 img{
+	height: 350px;
+	width: 350px;
+	float: right;
+	padding: 30px;
+	border-radius: 25%;
+}
+section div.tujuan p{
+	width: 750px;
+	padding: 10px 30px;
+	margin: auto;
+}
+section div.konten{
+	width: 750px;
+
+	padding: 30px;
+
+}
+
+footer{
+	float: left;
+	width: 100%;
+	height: 300px;
+	color: #ffffff;
+	background-color: #000000;
+	display: inline-block;
+}
+.kaki{
+	text-align: center;
+	margin: 50px;
+}

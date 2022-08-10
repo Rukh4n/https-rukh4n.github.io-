@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("img/bacground_web.jpg");
+    width: 100%;
+}
+header{
+    background-color: #000000;
+    padding: 15px;
+}
+.logo{
+	display: inline;
+	width: 25%;
+	color: #D6C904;
+	font-family: Embassy BT, serif;
+	font-size: 32px;
+	margin: 10px;
+}
+nav{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+ul{
+    margin: 15px auto;
+}
+li{
+    display: block;
+    background-color: hsl(0, 0%, 0%);
+    text-align: center;
+    font-size: 50px;
+    margin: 10px auto;
+    padding: 25px;
+}
+footer{
+
+}
+footer{
+	float: left;
+	width: 100%;
+	height: 300px;
+	color: #ffffff;
+	background-color: #000000;
+	display: inline-block;
+}
+.kaki{
+	text-align: center;
+	margin: 50px;
+}
